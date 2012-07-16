@@ -1,12 +1,10 @@
 // ==UserScript==
 // @name        RandomWikiEveryHour
 // @namespace   techietim
-// @description Opens a random Wikipedia article every hour
+// @description Opens a Wikipedia article at random intervals
 // @include     *
 // @version     0.1
 // ==/UserScript==
-
-var every = 3600000;
 
 GM_registerMenuCommand("RandWiki: English", function(e)
 {
@@ -29,7 +27,7 @@ setInterval(function()
     var date = new Date();
     var stamp = date.getTime();
     
-    if(stamp - last_update >= every)
+    if(stamp - last_update >= (Math.random() * 59 + 1) * 60000)
     {
         var language = GM_getValue("language", "en")
         GM_setValue("last_update", stamp.toString());
