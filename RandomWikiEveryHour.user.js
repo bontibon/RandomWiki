@@ -2,6 +2,7 @@
 // @name        RandomWikiEveryHour
 // @namespace   techietim
 // @description Opens a Wikipedia article at random intervals
+// @updateURL   https://github.com/techietim/RandomWikiEveryHour/raw/master/RandomWikiEveryHour.user.js
 // @include     *
 // @version     0.1
 // ==/UserScript==
