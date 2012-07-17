@@ -22,7 +22,7 @@ GM_registerMenuCommand("RandWiki: Spanish", function(e)
     GM_setValue("language", "es");
 });
 
-setInterval(function()
+var checkTime = function()
 {
     var last_update = GM_getValue("last_update", "0");
     var date = new Date();
@@ -34,5 +34,6 @@ setInterval(function()
         GM_setValue("last_update", stamp.toString());
         GM_openInTab("https://" + language + ".wikipedia.org/wiki/Special:Random");
     }
-    
-}, 60000);
+};
+checkTime();
+setInterval(checkTime, 60000);
