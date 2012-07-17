@@ -14,7 +14,7 @@ Please follow the instructions below for your browser:
 ### Chrome
 
 1. Install the [Tampermonkey][3] extension
-2. Install the [RandomWiki script][2]
+2. Install the [RandomWiki script][2] (when prompted, choose to install in Tampermonkey, not natively)
 
 
   [1]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
