@@ -3,8 +3,9 @@
 // @namespace   techietim
 // @description Opens a Wikipedia article at random intervals
 // @updateURL   https://github.com/techietim/RandomWikiEveryHour/raw/master/RandomWikiEveryHour.user.js
-// @include     *
-// @version     0.1
+// @include     http://*
+// @include     https://*
+// @version     0.1.1
 // ==/UserScript==
 
 GM_registerMenuCommand("RandWiki: English", function(e)
