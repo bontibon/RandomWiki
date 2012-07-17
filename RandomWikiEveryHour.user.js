@@ -8,6 +8,8 @@
 // @version     0.2
 // ==/UserScript==
 
+var name = "RandomWiki";
+
 var languages = {
     en: 'English',
     fr: 'French',
@@ -25,8 +27,8 @@ var change_value = function(new_value)
 {
     var old_value = GM_getValue("language", "en");
     GM_setValue("language", new_value);
-    alert(GM_info.script.name + "  Article language changed to " +
-        languages[new_value] + " from " + languages[old_value] + ".");
+    alert(name + ":  Article language changed to " + languages[new_value] +
+        " from " + languages[old_value] + ".");
 };
 
 var showArticle = function()
@@ -35,14 +37,14 @@ var showArticle = function()
     GM_openInTab("https://" + language + ".wikipedia.org/wiki/Special:Random");
 };
 
-GM_registerMenuCommand(GM_info.script.name + ": Show random article", function()
+GM_registerMenuCommand(name + ": Show random article", function()
 {
     showArticle();
 });
 
 for(var lang in languages)
 {
-    GM_registerMenuCommand(GM_info.script.name + ": " + languages[lang],
+    GM_registerMenuCommand(name + ": " + languages[lang],
     (function(){
         var lang_value = lang;
         return function()
