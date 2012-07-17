@@ -18,5 +18,5 @@ Please follow the instructions below for your browser:
 
 
   [1]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
-  [2]: https://github.com/techietim/RandomWiki/raw/master/RandomWikiEveryHour.user.js
+  [2]: https://github.com/techietim/RandomWiki/raw/master/RandomWiki.user.js
   [3]: https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo
