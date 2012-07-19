@@ -5,7 +5,7 @@
 // @updateURL   https://github.com/techietim/RandomWiki/raw/master/RandomWiki.user.js
 // @include     http://*
 // @include     https://*
-// @version     0.2
+// @version     0.2.1
 // ==/UserScript==
 
 var name = "RandomWiki";
@@ -56,13 +56,14 @@ for(var lang in languages)
 
 var checkTime = function()
 {
-    var last_update = GM_getValue("last_update", "0");
+    var next_article = parseInt(GM_getValue("next_article", "0"));
     var date = new Date();
     var stamp = date.getTime();
     
-    if(stamp - last_update >= (Math.random() * 59 + 1) * 60000)
+    if(stamp >= next_article)
     {
-        GM_setValue("last_update", stamp.toString());
+        var new_time = stamp + ((Math.random() * 59 + 1) * 60000);
+        GM_setValue("next_article", new_time.toString());
         showArticle();
     }
 };
