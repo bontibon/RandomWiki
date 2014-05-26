@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name        RandomWiki
-// @namespace   techietim
+// @namespace   bontibon
 // @description Opens a Wikipedia article at random intervals
-// @updateURL   https://github.com/techietim/RandomWiki/raw/master/RandomWiki.user.js
+// @updateURL   https://github.com/bontibon/RandomWiki/raw/master/RandomWiki.user.js
 // @include     http://*
 // @include     https://*
 // @version     0.2.1
